@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import TimeTracking from "./components/TimeTracking";
 
 function App() {
-
   return (
-    <div>
-      <p className=' text-red-700'>Hello World</p>
-    </div>
-  )
+    <main className="  text">
+      <TimeTracking />
+    </main>
+  );
 }
 
-export default App
+export default App;
