@@ -4,24 +4,30 @@ import ProfileImage from "../assets/images/image-jeremy.png";
 
 const TimeTracking = () => {
   return (
-    <div>
-      <div>
-        <div>
-          <div>
-            <img src={ProfileImage} alt="Profile Image" />
+    <div className=" my-16">
+      <div className=" bg-darkBlue rounded-lg max-w-xs mx-auto">
+        <div className=" bg-blue rounded-lg px-8 py-6 grid grid-cols-[1fr_2fr] items-center gap-4">
+          <img
+            className=" border-4 border-white rounded-full"
+            src={ProfileImage}
+            alt="Profile Image"
+          />
+          <div className=" flex flex-col">
+            <p className=" text-paleBlue">Report for</p>
+            <p className=" text-white font-300 text-cardTitleFontSize">
+              Jeremy Robson
+            </p>
           </div>
-          <p>Report for</p>
-          <p>Jeremy Robson</p>
         </div>
-        <div>
-          <ul>
-            <li>
+        <div className=" px-8 py-6">
+          <ul className=" flex justify-between text-paleBlue">
+            <li className=" hover:text-white">
               <button>Daily</button>
             </li>
-            <li>
+            <li className=" hover:text-white">
               <button>Weekly</button>
             </li>
-            <li>
+            <li className=" hover:text-white">
               <button>Monthly</button>
             </li>
           </ul>
@@ -51,7 +57,7 @@ type ItemProps = {
 
 const Item = ({ title, current, previous }: ItemProps) => (
   <div>
-    <div className=" text-lg">
+    <div>
       <p>{title}</p>
       <img src="" alt="" />
     </div>
