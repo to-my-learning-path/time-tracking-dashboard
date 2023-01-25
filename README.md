@@ -17,9 +17,8 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Screenshot
 
-<!-- ![Desktop View](./screenshot/screenshot_1.png)
+![Desktop View](./screenshot/screenshot_1.png)
 ![Mobile View](./screenshot/screenshot_2.png)
-![Mobile View with menu](./screenshot/screenshot_3.png) -->
 
 ### Links
 
@@ -33,9 +32,15 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 - Mobile-First Approach
+- React
+- Typescript
+- Tailwind
 
 ### What I learned
+
+- How to use Typescript. I also learned that Tailwind CSS does not support dynamic class names.
 
 ## Author
 
