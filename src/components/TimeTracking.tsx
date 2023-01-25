@@ -193,7 +193,8 @@ const Item = ({ title, bgColor, bgImage, dataObj, timeframe }: ItemProps) => (
           hrs
         </p>
         <p className=" text-paleBlue font-300">
-          Last Week -{" "}
+          {timeframeText(timeframe)}
+          {" - "}
           {
             dataObj?.timeframes[timeframe as keyof typeof dataObj.timeframes]
               .previous
@@ -204,5 +205,18 @@ const Item = ({ title, bgColor, bgImage, dataObj, timeframe }: ItemProps) => (
     </div>
   </div>
 );
+
+const timeframeText = (timeframe: string): string => {
+  switch (timeframe.toLowerCase()) {
+    case "daily":
+      return "Yesterday";
+    case "weekly":
+      return "Last Week";
+    case "monthly":
+      return "Last Month";
+    default:
+      return "N/A";
+  }
+};
 
 export default TimeTracking;
