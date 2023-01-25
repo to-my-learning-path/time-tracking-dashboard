@@ -4,7 +4,7 @@ import TimeTracking from "./components/TimeTracking";
 
 function App() {
   return (
-    <main className="  text">
+    <main>
       <TimeTracking />
     </main>
   );
